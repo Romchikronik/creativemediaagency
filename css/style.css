@@ -1050,6 +1050,12 @@ section {
   text-align: center;
 }
 
+.marketing .col-md-6 {
+  /*  @include _991-block{
+           @include flex();
+       } */
+}
+
 .marketing .subtitle {
   margin-bottom: 50px;
 }
@@ -1084,7 +1090,6 @@ section {
   padding: 30px;
   background-color: #fff;
   text-align: center;
-  margin-bottom: 50px;
   -webkit-transition: all 600ms ease;
   -o-transition: all 600ms ease;
   transition: all 600ms ease;
@@ -1097,6 +1102,7 @@ section {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
   /*  .color-1{
            background-color: #fb9ac8;
            box-shadow: 0px 6px 16px 0px rgba(251, 154, 200, 0.36);
@@ -1193,29 +1199,26 @@ section {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  /*  .fa-telegram{
+               color: $white;
+               background: #00A1F1;
+               border-radius: 50%;
+           }
+           .fa-facebook-official{
+            color: $white;
+            background: #3B5998;
+           }
+           .fa-instagram,
+           .fa-vk,
+           .fa-odnoklassniki,
+           .fa-youtube-play{
+           color: $white;
+           } */
 }
 
 .marketing-card__icon .fa {
   font-size: 30px;
   color: #291a55;
-}
-
-.marketing-card__icon .fa-telegram {
-  color: #fff;
-  background: #00A1F1;
-  border-radius: 50%;
-}
-
-.marketing-card__icon .fa-facebook-official {
-  color: #fff;
-  background: #3B5998;
-}
-
-.marketing-card__icon .fa-instagram,
-.marketing-card__icon .fa-vk,
-.marketing-card__icon .fa-odnoklassniki,
-.marketing-card__icon .fa-youtube-play {
-  color: #fff;
 }
 
 .marketing-card__wrap-title {
@@ -2402,13 +2405,13 @@ section {
   font-size: 14px;
   color: #3a505f;
   max-width: 500px;
+  z-index: 2;
 }
 
 .payment-content__items li .fa {
   color: #3739B9;
   font-size: 18px;
   margin-right: 15px;
-  z-index: 2;
 }
 
 .payment-content__items li .last {
@@ -2696,6 +2699,13 @@ section {
   padding-bottom: 25px;
 }
 
+.bottom-content__row {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .bottom-content__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2754,7 +2764,7 @@ section {
   color: #232490;
   opacity: 0.3;
   position: absolute;
-  left: 0;
+  left: 10px;
   top: 0;
 }
 
@@ -2798,6 +2808,15 @@ section {
     top: 210px;
     left: 95px;
     width: 30%;
+  }
+
+  .payment-content {
+    max-width: 650px;
+  }
+
+  .payment-content__gif {
+    left: -40px;
+    max-width: 220px;
   }
 }
 
@@ -2936,20 +2955,12 @@ section {
     margin-bottom: 50px;
   }
 
-  .marketing .col-md-6 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
   .marketing .subtitle {
     margin-bottom: 40px;
+  }
+
+  .marketing-card {
+    margin-bottom: 30px;
   }
 
   .testimonials-two__shape-1 {
@@ -3017,8 +3028,17 @@ section {
     flex-direction: column;
   }
 
+  .payment-content {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
   .payment-tab {
     width: 70%;
+  }
+
+  .payment-tab__title {
+    font-size: 17px;
   }
 
   .payment-nav {
@@ -3039,12 +3059,23 @@ section {
     width: 28%;
   }
 
+  .bottom-content__row {
+    margin-bottom: 20px;
+  }
+
   .bottom-content__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    /*    align-items: center; */
+  }
+
+  .bottom-content__subtitle {
+    margin-bottom: 40px;
+  }
+
+  .smm-tasks__arrow-red {
+    right: 115px;
   }
 }
 
@@ -3203,6 +3234,10 @@ section {
 
   .payment-nav__contact {
     width: 100%;
+  }
+
+  .smm-tasks .col_5 {
+    margin-top: 0;
   }
 }
 
@@ -3443,7 +3478,27 @@ section {
     margin-right: 10px;
   }
 
+  .payment-slider {
+    width: 100%;
+  }
+
+  .payment-tab {
+    width: 100%;
+  }
+
   .payment-tab__header a {
     line-height: 20px;
+  }
+
+  .payment-tab__header a span {
+    font-size: 11px;
+  }
+
+  .payment-tab__text {
+    height: 110px;
+  }
+
+  .bottom-content__subtitle {
+    margin-bottom: 30px;
   }
 }
