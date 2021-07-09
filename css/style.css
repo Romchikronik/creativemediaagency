@@ -2854,6 +2854,14 @@ section {
     padding: 0;
   }
 
+  .header-menu .dropdown:hover .header-arrow {
+    display: none;
+  }
+
+  .header-menu .dropdown:hover .header-services {
+    display: none;
+  }
+
   .header-menu {
     max-width: 100%;
     position: fixed;
