@@ -34,7 +34,7 @@ $(document).ready(function () {
         }
     })
     
-    $(".dropdown").hover(
+   /*  $(".dropdown").hover(
         function(e) {
             e.preventDefault();
             $('.header-services').stop(true).slideDown(100);
@@ -43,7 +43,12 @@ $(document).ready(function () {
             e.preventDefault();
             $('.header-services').stop(true).slideUp(100);
         }
-    );
+    ); */
+    
+
+    
+    
+    
     
     
     $(window).scroll(function(){
