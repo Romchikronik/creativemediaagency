@@ -988,7 +988,7 @@ section {
 }
 
 .about-header .page__title {
-  font-size: 30px;
+  font-size: 28px;
   padding-top: 0;
   margin-bottom: 0;
 }
@@ -3957,6 +3957,33 @@ ul#portfolio-grid.two-column > li {
   margin-bottom: 10px;
 }
 
+.textAnim span {
+  display: inline-block;
+  letter-spacing: 0;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  text-shadow: 0px 0px 0px #04d4ac;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  cursor: default;
+}
+
+.textAnim span:hover {
+  text-shadow: -8px 8px 0px #04d4ac;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  top: -8px;
+  left: 8px;
+}
+
+.textAnim span.space {
+  width: 5px;
+  height: 100%;
+}
+
 @media only screen and (min-width: 768px) {
   .b-PPC__Process .b-SWD__ProcessScheme_Step1 {
     margin-top: 60px;
@@ -5324,6 +5351,10 @@ ul#portfolio-grid.two-column > li {
 
   .success__col4 {
     margin-top: 140px;
+  }
+
+  .textAnim span.space {
+    width: 3px;
   }
 }
 

@@ -189,21 +189,8 @@ $('.payment-tab__btn').click(function(e){
     $(href).addClass('slider-open');
 });
 
-/* if ($(window).width() > 1170) {
-    $('.container.inner h1').addClass('textAnim');
-    $('.container .title-section, .title, .title-main a').wrapInner('<span class="textAnim"></div>');
 
-    $.each($('.textAnim'), function(){
-        var text = $(this),
-        textArr = text.text().split('');
 
-        $(this).html('');
-        $.each(textArr, function(i, v){
-          if(v == ' '){text.append('<span class="space"></span>');}
-          text.append('<span>'+v+'</span>');
-        });
-    });
-  } */ 
 
   if ($(".pointer").length) {
     $(document).on("mousemove", function (e) {
