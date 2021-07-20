@@ -3,6 +3,24 @@ $(document).ready(function () {
     var onOff = true;
     var onOff2 = true;
     
+    const setFavicon = (emoji) => {
+        const canvas = document.createElement('canvas');
+        canvas.height = 32;
+        canvas.width = 32;
+      
+        const ctx = canvas.getContext('2d');
+        ctx.font = '28px serif';
+        ctx.fillText(emoji, -2, 24);
+      
+        const favicon = document.querySelector('link[rel=icon]');
+        if (favicon) { favicon.href = canvas.toDataURL(); }
+      }
+      
+      setFavicon('🚀');
+      
+      
+    
+    
     $('.nav-page, .btn-page').click(function(e){
         e.preventDefault();
         var navHeight = $('.header-nav').outerHeight();
@@ -170,6 +188,32 @@ $('.payment-tab__btn').click(function(e){
     var href = $(this).attr('href');
     $(href).addClass('slider-open');
 });
+
+/* if ($(window).width() > 1170) {
+    $('.container.inner h1').addClass('textAnim');
+    $('.container .title-section, .title, .title-main a').wrapInner('<span class="textAnim"></div>');
+
+    $.each($('.textAnim'), function(){
+        var text = $(this),
+        textArr = text.text().split('');
+
+        $(this).html('');
+        $.each(textArr, function(i, v){
+          if(v == ' '){text.append('<span class="space"></span>');}
+          text.append('<span>'+v+'</span>');
+        });
+    });
+  } */ 
+
+  if ($(".pointer").length) {
+    $(document).on("mousemove", function (e) {
+        $(".pointer").css({
+            top: e.pageY + "px",
+            left: e.pageX + "px",
+        });
+    });
+}
+
 
     
 });
