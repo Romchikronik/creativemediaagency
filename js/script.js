@@ -63,7 +63,11 @@ $(document).ready(function () {
         }
     );
     
-
+    if(window.matchMedia('(max-width: 992px)').matches){
+        $('.dropdown').removeClass('dropdown');
+        // do functionality on screens smaller than 991px
+    }
+    
     
     
     
