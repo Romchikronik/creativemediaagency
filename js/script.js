@@ -68,7 +68,13 @@ $(document).ready(function () {
         // do functionality on screens smaller than 991px
     }
     
-    
+    if ($(".company") !== null) {
+        $(".company").on("mousemove", function (event) {
+            $(this).find(".bg-letters span").css({
+                "animation-play-state": "running"
+            });
+        });
+    }
     
     
     
