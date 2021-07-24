@@ -10,5 +10,7 @@ $(document).ready(function () {
     }
     }
  
-    window.onload =  typeWriter(); 
+    window.onload = setTimeout(function(){
+        typeWriter(); 
+       }, 2000); 
 });
