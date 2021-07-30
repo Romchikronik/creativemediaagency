@@ -3,6 +3,7 @@ $(document).ready(function () {
     var onOff = true;
     var onOff2 = true;
     
+    // фавиконка на сайте
     const setFavicon = (emoji) => {
         const canvas = document.createElement('canvas');
         canvas.height = 32;
@@ -15,12 +16,19 @@ $(document).ready(function () {
         const favicon = document.querySelector('link[rel=icon]');
         if (favicon) { favicon.href = canvas.toDataURL(); }
       }
-      
       setFavicon('🚀');
       
+       // курсор анимированный
+      if ($(".pointer").length) {
+        $(document).on("mousemove", function (e) {
+            $(".pointer").css({
+                top: e.pageY + "px",
+                left: e.pageX + "px",
+            });
+        });
+    }
       
-    
-    
+    // навигация на сайте
     $('.nav-page, .btn-page').click(function(e){
         e.preventDefault();
         var navHeight = $('.header-nav').outerHeight();
@@ -35,6 +43,8 @@ $(document).ready(function () {
             $('.header-menu__burger').removeClass('open');
         }
     })
+    
+    // кнопка навигации на сайте
     $('.header-menu__burger').click(function(){
         if(!$(this).hasClass('open')){
             $(this).addClass('open');
@@ -52,6 +62,7 @@ $(document).ready(function () {
         }
     })
     
+    // выпадающий список
     $(".dropdown").hover(
         function(e) {
             e.preventDefault();
@@ -62,12 +73,12 @@ $(document).ready(function () {
             $('.header-services').slideUp(150);
         }
     );
-    
     if(window.matchMedia('(max-width: 992px)').matches){
         $('.dropdown').removeClass('dropdown');
         // do functionality on screens smaller than 991px
     }
     
+    // секция с буквами на заднем плане
     if ($(".company") !== null) {
         $(".company").on("mousemove", function (event) {
             $(this).find(".bg-letters span").css({
@@ -76,9 +87,7 @@ $(document).ready(function () {
         });
     }
     
-    
-    
-    
+    // навигация по странице
     $(window).scroll(function(){
         if($(this).scrollTop() >= $('.header-nav').outerHeight() && onOff == true && onOff2 == true){
             $('.header-nav').addClass('fixed-top').css('opacity', 0).animate({
@@ -107,8 +116,6 @@ $(document).ready(function () {
             }
         })
        
-        
-        
         if($(this).scrollTop() > 350){
             $('#top').fadeIn();
         }
@@ -116,26 +123,20 @@ $(document).ready(function () {
             $('#top').fadeOut();
         }
     })
+    
+    // кнопка которая поднимает вверх страницы
     $('#top').click(function(){
         $('html').animate({
           scrollTop: 0  
         }, 1200)
     })
-   
-   /*   $('.header-menu__wrap, .header-services').mouseover(function(){
-        $('.header-services').slideDown();
-        $('.fa-angle-down').addClass('fa-rotate-180');
-     })
-     $('.header-menu__wrap, .header-services').mouseleave(function () { 
-        $('.header-services').slideUp();
-        $('.fa-angle-down').removeClass('fa-rotate-180');
-     }) */
        
+    // набор цифр
      $('.company-fanfacts__number').counterUp({
         time: 2000
     });
      
-   
+    // слайдер с отзывами 
    if ($('.thm__owl-carousel').length) {
     $('.thm__owl-carousel').each(function () {
         var Self = $(this);
@@ -158,6 +159,25 @@ $(document).ready(function () {
     });
 }
 
+// первая фоорма для отправки данных на заказ
+$('.btn_open-form').click(function(e){
+    e.preventDefault();
+   $('.overlay').show().css('overflow-y', 'auto');
+   $('body').css('overflow-y', 'hidden');
+   $('.content-form').animate({
+      top: '50%'
+   })
+})
+
+$('.content-form__close, .overlay').click(function(){
+    $('.overlay').hide();
+    $('body').css('overflow-y', 'scroll');
+    $('.content-form').animate({
+        top: '-150%'
+     })
+ })
+
+ // вторая форма для отправки формы на вакансию 
 $('.footer-contact-social__vacancy').click(function(e){
     e.preventDefault();
    $('.overlay').show().css('overflow-y', 'auto');
@@ -166,6 +186,7 @@ $('.footer-contact-social__vacancy').click(function(e){
       top: '50%'
    })
 })
+
 $('.content-form__close, .overlay').click(function(){
     $('.overlay').hide();
     $('body').css('overflow-y', 'scroll');
@@ -173,6 +194,7 @@ $('.content-form__close, .overlay').click(function(){
         top: '-100%'
      })
  })
+ 
  $('.input_file input[type=file]').change(function() {
     var t = $(this).val();
     if (t.indexOf('C:\\fakepath\\') + 1) t = t.substr(12);
@@ -181,7 +203,7 @@ $('.content-form__close, .overlay').click(function(){
 });
 
 // services page
-
+// слайдер на с иконками
 $('.payment-slider').slick({
     arrows: false,
     dots: true,
@@ -190,6 +212,7 @@ $('.payment-slider').slick({
     autoplay: true
 });
 
+// табы
 $('.payment-tab__btn').click(function(e){
     e.preventDefault();
     $('.slider-open').removeClass('slider-open');
@@ -199,17 +222,6 @@ $('.payment-tab__btn').click(function(e){
     $(href).addClass('slider-open');
 });
 
-
-
-
-  if ($(".pointer").length) {
-    $(document).on("mousemove", function (e) {
-        $(".pointer").css({
-            top: e.pageY + "px",
-            left: e.pageX + "px",
-        });
-    });
-}
 
 
     
