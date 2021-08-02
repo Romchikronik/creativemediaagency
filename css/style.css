@@ -147,6 +147,31 @@ section {
   z-index: 5;
 }
 
+.alert-danger {
+  color: #842029;
+  background-color: #f8d7da;
+  border-color: #f5c2c7;
+  position: relative;
+  padding: 1rem 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+
+.alert-success {
+  color: #0f5132;
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+  position: relative;
+  padding: 1rem 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+
+#send img {
+  width: 25px;
+  margin-left: 15px;
+}
+
 .section-line {
   background-image: -webkit-gradient(linear, left top, right top, from(#232490), color-stop(51%, #5b5cfb), to(#232490));
   background-image: -o-linear-gradient(left, #232490 0%, #5b5cfb 51%, #232490 100%);
@@ -1153,23 +1178,10 @@ section {
 .marketing {
   padding-bottom: 0;
   text-align: center;
-  /*    .row [class*=col-]:nth-child(even) {
-       margin-top: 70px;
-       @include _575(margin-top, 0);
-   } */
-  /* .col__design{
-      margin-top: 10px !important;
-   }
-   .col__designcenter{
-       margin-top: 90px;
-   } */
 }
 
 .marketing .col-xl-3 {
   margin-bottom: 30px;
-  /*  @include _991-block{
-           @include flex();
-       } */
 }
 
 .marketing .col-xl-3:hover .web-design__card {
@@ -1212,46 +1224,6 @@ section {
   -ms-flex-direction: column;
   flex-direction: column;
   margin-bottom: 0;
-  /*  .color-1{
-           background-color: #fb9ac8;
-           box-shadow: 0px 6px 16px 0px rgba(251, 154, 200, 0.36);
-       }
-       .color-2{
-           background-color: #e94794;
-           box-shadow: 0px 6px 16px 0px rgba(233, 71, 148, 0.36);
-       }
-       .color-3{
-           background-color: #bac5fd;
-           box-shadow: 0px 6px 16px 0px rgba(186, 197, 253, 0.36);
-       }
-       .color-4{
-           background-color: #ff9322;
-           box-shadow: 0px 6px 16px 0px rgba(255, 147, 34, 0.36);
-       }
-       .color-tg{
-        background: #00A1F1;
-        box-shadow: 0px 6px 16px 0px rgba($color:  #00A1F1, $alpha: 0.36);
-       }
-       .color-fb{
-        background-color: #3B5998;
-        box-shadow: 0px 6px 16px 0px rgba($color:  #3B5998, $alpha: 0.36);
-       }
-       .color-in{
-        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-        box-shadow: 0px 6px 16px 0px rgba($color:  #fd5949, $alpha: 0.36);
-       }
-       .color-vk{
-           background:  #597da3;
-           box-shadow: 0px 6px 16px 0px rgba($color:  #597da3, $alpha: 0.36);
-       }
-       .color-ok{
-        background:  #ed812b;
-        box-shadow: 0px 6px 16px 0px rgba($color:  #ed812b, $alpha: 0.36);
-       }
-       .color-tube{
-        background:  #c4302b;
-        box-shadow: 0px 6px 16px 0px rgba($color:  #c4302b, $alpha: 0.36);
-       } */
 }
 
 .marketing-card:hover {
