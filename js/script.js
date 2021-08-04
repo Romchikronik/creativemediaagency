@@ -162,8 +162,8 @@ $(document).ready(function () {
 // первая фоорма для отправки данных на заказ
 $('.btn_open-form').click(function(e){
     e.preventDefault();
-   $('.overlay').show().css('overflow-y', 'auto');
-   $('body').css('overflow-y', 'hidden');
+   $('.overlay').show().css('overflow', 'auto');
+   $('html').css('overflow-y', 'hidden');
    $('.content-form').animate({
       top: '50%'
    })
@@ -171,7 +171,7 @@ $('.btn_open-form').click(function(e){
 
 $('.content-form__close, .overlay').click(function(){
     $('.overlay').hide();
-    $('body').css('overflow-y', 'scroll');
+    $('html').css('overflow-y', 'scroll');
     $('.content-form').animate({
         top: '-150%'
      })
@@ -180,8 +180,8 @@ $('.content-form__close, .overlay').click(function(){
  // вторая форма для отправки формы на вакансию 
 $('.footer-contact-social__vacancy').click(function(e){
     e.preventDefault();
-   $('.overlay').show().css('overflow-y', 'auto');
-   $('body').css('overflow-y', 'hidden');
+   $('.overlay').show().css('overflow', 'auto');
+   $('html').css('overflow-y', 'hidden');
    $('.vacancy').animate({
       top: '50%'
    })
@@ -189,7 +189,7 @@ $('.footer-contact-social__vacancy').click(function(e){
 
 $('.content-form__close, .overlay').click(function(){
     $('.overlay').hide();
-    $('body').css('overflow-y', 'scroll');
+    $('html').css('overflow-y', 'scroll');
     $('.vacancy').animate({
         top: '-100%'
      })
