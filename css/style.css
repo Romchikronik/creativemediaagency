@@ -180,21 +180,23 @@ section {
 }
 
 .alert-danger {
+  margin-top: 10px;
   color: #842029;
   background-color: #f8d7da;
   border-color: #f5c2c7;
   position: relative;
-  padding: 1rem 1rem;
+  padding: 10px;
   border: 1px solid transparent;
   border-radius: .25rem;
 }
 
 .alert-success {
+  margin-top: 10px;
   color: #0f5132;
   background-color: #d1e7dd;
   border-color: #badbcc;
   position: relative;
-  padding: 1rem 1rem;
+  padding: 10px;
   border: 1px solid transparent;
   border-radius: .25rem;
 }
@@ -202,6 +204,7 @@ section {
 #send img {
   width: 25px;
   margin-left: 15px;
+  z-index: 3;
 }
 
 .section-line {
@@ -390,7 +393,7 @@ section {
 
 .header-services {
   position: absolute;
-  top: 54px;
+  top: 55px;
   line-height: 25px;
   width: 230px;
   background: #fff;
@@ -841,7 +844,6 @@ section {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-bottom: 0;
   padding: 10px;
 }
 
@@ -855,6 +857,11 @@ section {
   background: -webkit-gradient(linear, left top, right top, from(#e73d8e), to(#fda4ce));
   background: -o-linear-gradient(left, #e73d8e 0%, #fda4ce 100%);
   background: linear-gradient(to right, #e73d8e 0%, #fda4ce 100%);
+}
+
+.about-card__i {
+  width: 29px;
+  height: 29px;
 }
 
 .about-card__text {
@@ -986,7 +993,7 @@ section {
 .company-fanfacts__subtitle {
   font-size: 11px;
   margin-bottom: 0;
-  line-height: 11px;
+  line-height: 12px;
 }
 
 .company__img {
@@ -4349,6 +4356,11 @@ ul#portfolio-grid.two-column > li {
   padding: 30px 0;
   font-size: 30px;
   margin-bottom: 20px;
+  /*   color: #291a55; */
+  /* background-image: linear-gradient(180deg,#ff9723 0,#ff5b11 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; */
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #232490), color-stop(51%, #5b5cfb), to(#232490));
   background-image: -o-linear-gradient(left, #232490 0, #5b5cfb 51%, #232490 100%);
   background-image: linear-gradient(90deg, #232490 0, #5b5cfb 51%, #232490 100%);
@@ -5313,6 +5325,7 @@ ul#portfolio-grid.two-column > li {
   .company-fanfacts__subtitle {
     margin-bottom: 0;
     font-size: 18px;
+    line-height: 18px;
   }
 
   .about-header .page__title {
@@ -5660,7 +5673,7 @@ ul#portfolio-grid.two-column > li {
 
   .company-fanfacts__subtitle {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 16px;
   }
 
   .services {
@@ -5939,6 +5952,11 @@ ul#portfolio-grid.two-column > li {
   .company-fanfacts__number {
     margin-bottom: 5px;
     font-size: 25px;
+  }
+
+  .company-fanfacts__subtitle {
+    font-size: 11px;
+    line-height: 12px;
   }
 
   .company__img {

@@ -404,7 +404,7 @@
 
 
                 <div class="cta-one__btn-block">
-                    <a href="contact.html" class="thm-btn cta-one__btn">Свяжитесь с нами</a>
+                    <a href="" class="thm-btn cta-one__btn btn_open-form">Свяжитесь с нами</a>
                     <!-- /.thm-btn cta-one__btn -->
                 </div><!-- /.cta-one__btn-block -->
             </div><!-- /.inner-container -->
@@ -477,6 +477,19 @@
     
     <div class="overlay"></div>
     
+    <form action="./tg/tg.php" method="post" class="content-form" id="form">
+        <h2 class="footer-contact-form__title content-form__title">Позвольте нам сделать один из лучших проектов в вашей сфере</h2>
+            <p class="footer-contact-form__subtitle content-form__subtitle">Оставьте заявку и мы свяжемся с вами в течении 5 минут, засекайте!</p>
+            <input type="text" name="name" id="username" placeholder="ФИО" class="contact-form__input content-form__input">
+            <input type="number" name="phone" id="userphone" placeholder="Телефон" class="contact-form__input content-form__input">
+            <input type="email" name="email" id="useremail" placeholder="Email" class="contact-form__input content-form__input">
+            <input type="submit" id="send" value="Отправить заявку" class="contact-form__btn content-form__btn">
+            <input type="text" hidden value="Разработка сайтов" name="pageName" id="pageName">
+            <p class="content-form__text">Нажимая кнопку «Отправить», Вы даете согласие на обработку персональных данных</p>
+            <button  type="button" class="content-form__close"><i class="fa fa-times" aria-hidden="true"></i></button>
+            <div class="alert" id="error"></div>
+    </form>
+    
     <form action="" class="vacancy">
         <h2 class="footer-contact-form__title content-form__title">Хотите стать членом нашей команды?</h2>
             <p class="footer-contact-form__subtitle content-form__subtitle">загрузите свое резюме и мы рассмотрим вашу кандидатуру</p>
@@ -500,6 +513,7 @@
     <script src="js/slick.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/tg.js"></script>
     <script src="js/script.js"></script>
     <script src="js/preloader.js"></script>
 </body>

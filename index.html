@@ -95,7 +95,9 @@
                       <div class="about-card card animate__animated wow animate__slideInLeft">
                         <div class="about-card__wrap"></div>
                           <div class="about-card__about">
-                            <img class="about-card__img card__img about-card__img_1" src="img/about_img1.png" alt=""> <!-- 🚀 -->
+                            <div class="about-card__img">
+                                <img class="about-card__i" src="img/about_img1.png" alt="">
+                            </div> 
                           </div>
                           <h4 class="card__title">Скорость</h4>
                           <p class="card__subtitle">Мы, работаем быстро и оперативно, заданную работу выполняем в короткие сроки</p>
@@ -103,7 +105,9 @@
                       <div class="about-card card animate__animated wow animate__slideInRight">
                         <div class="about-card__wrap about-card__wrap_2"></div>
                         <div class="about-card__about">
-                          <img class="about-card__img card__img about-card__img_2" src="img/about_img2.PNG" alt="">
+                            <div class="about-card__img about-card__img_2">
+                                <img class="about-card__i" src="img/about_img2.PNG" alt="">
+                            </div>
                         </div>
                           <h4 class="card__title">Качество</h4>
                           <p class="card__subtitle">Мы гарантируем качественное выполнение работы, неповторимый дизайн и точное следование дедлайнам</p>
@@ -111,7 +115,9 @@
                       <div class="about-card card animate__animated wow animate__slideInLeft">
                         <div class="about-card__wrap about-card__wrap_3"></div>
                         <div class="about-card__about">
-                          <img class="about-card__img card__img about-card__img_3" src="img/about_img3.png" alt="">
+                            <div class="about-card__img about-card__img_3">
+                                <img class="about-card__i" src="img/about_img3.png" alt="">
+                            </div>
                         </div>
                           <h4 class="card__title">Стратегия</h4>
                           <p class="card__subtitle">Мы разработаем полноценную стратегию, благодаря которой ваш бизнес станет надёжнее и намного успешнее</p> 
@@ -171,21 +177,21 @@
                     <div class="company-fanfacts">
                         <div class="company-fanfacts__wrap">
                             <div class="company-fanfacts__count">
-                                <p class="title company-fanfacts__number">50 </p><span class="company-fanfacts__plus">+</span>
+                                <p class="title company-fanfacts__number">38 </p><span class="company-fanfacts__plus">+</span>
                             </div>
-                            <p class="subtitle company-fanfacts__subtitle">Satisfied Clients</p>
+                            <p class="subtitle company-fanfacts__subtitle">Удовлетвореных клиентов</p>
+                        </div>
+                        <div class="company-fanfacts__wrap">
+                            <div class="company-fanfacts__count">
+                                <p class="title company-fanfacts__number">20 </p><span class="company-fanfacts__plus">+</span>
+                            </div>
+                            <p class="subtitle company-fanfacts__subtitle">Штатных работников</p>
                         </div>
                         <div class="company-fanfacts__wrap">
                             <div class="company-fanfacts__count">
                                 <p class="title company-fanfacts__number">40 </p><span class="company-fanfacts__plus">+</span>
                             </div>
-                            <p class="subtitle company-fanfacts__subtitle">Expert Member</p>
-                        </div>
-                        <div class="company-fanfacts__wrap">
-                            <div class="company-fanfacts__count">
-                                <p class="title company-fanfacts__number">60 </p><span class="company-fanfacts__plus">+</span>
-                            </div>
-                            <p class="subtitle company-fanfacts__subtitle">Works Done</p>
+                            <p class="subtitle company-fanfacts__subtitle">Выполненыx работ</p>
                         </div>
                     </div>
                 </div>
@@ -596,15 +602,17 @@
     
     <div class="overlay"></div>
     
-    <form action="" class="content-form">
+    <form action="./tg/tg.php" method="post" class="content-form" id="form">
         <h2 class="footer-contact-form__title content-form__title">Позвольте нам сделать один из лучших проектов в вашей сфере</h2>
             <p class="footer-contact-form__subtitle content-form__subtitle">Оставьте заявку и мы свяжемся с вами в течении 5 минут, засекайте!</p>
-            <input type="text" placeholder="Имя" class="contact-form__input content-form__input" required>
-            <input type="number" placeholder="Телефон" class="contact-form__input content-form__input" required>
-            <input type="email" placeholder="Почта" class="contact-form__input content-form__input" required>
-            <input type="submit" value="Отправить заявку" class="contact-form__btn content-form__btn">
+            <input type="text" name="name" id="username" placeholder="ФИО" class="contact-form__input content-form__input">
+            <input type="number" name="phone" id="userphone" placeholder="Телефон" class="contact-form__input content-form__input">
+            <input type="email" name="email" id="useremail" placeholder="Email" class="contact-form__input content-form__input">
+            <input type="submit" id="send" value="Отправить заявку" class="contact-form__btn content-form__btn">
+            <input type="text" hidden value="Главная" name="pageName" id="pageName">
             <p class="content-form__text">Нажимая кнопку «Отправить», Вы даете согласие на обработку персональных данных</p>
             <button  type="button" class="content-form__close"><i class="fa fa-times" aria-hidden="true"></i></button>
+            <div class="alert" id="error"></div>
     </form>
     
     <form action="" class="vacancy">
@@ -631,6 +639,7 @@
     <script src="./js/owl.carousel.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/txt.js"></script>
+    <script src="js/tg.js"></script>
     <script src="js/script.js"></script>
     <script src="js/preloader.js"></script>
 </body>
