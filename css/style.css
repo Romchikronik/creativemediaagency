@@ -3688,7 +3688,7 @@ ul#portfolio-grid.two-column > li {
 }
 
 .price__title {
-  color: #ff5b11;
+  color: #232490;
   background: #fff;
   text-align: center;
   width: 220px;
@@ -3700,31 +3700,32 @@ ul#portfolio-grid.two-column > li {
 .price__underline {
   width: 60%;
   height: 2px;
-  background-image: -o-linear-gradient(#ff9723 0px, #ff5b11 100%);
-  background-image: linear-gradient(#ff9723 0px, #ff5b11 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#232490), color-stop(51%, #5b5cfb), to(#232490));
+  background-image: -o-linear-gradient(left, #232490 0%, #5b5cfb 51%, #232490 100%);
+  background-image: linear-gradient(90deg, #232490 0%, #5b5cfb 51%, #232490 100%);
   margin: auto;
   margin-bottom: -15px;
 }
 
 .price__list {
-  width: 350px;
+  width: 300px;
   margin: 0 auto;
-  background-color: #081438;
+  background-color: #fff;
   padding-bottom: 20px;
   text-align: center;
   font-weight: 500;
-  border: 2px solid #081438;
+  border: 2px solid #000;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
 
 .price__list:hover {
-  border: 2px solid #ff5b11;
+  border: 2px solid #232490;
 }
 
 .price__list-title {
-  color: #e7d6c0;
+  color: #000;
   text-transform: uppercase;
   font-size: 17px;
   padding: 20px 0;
@@ -3735,10 +3736,11 @@ ul#portfolio-grid.two-column > li {
 
 .price__list-subtitle {
   color: #fff;
-  background-image: -o-linear-gradient(#ff9723 0px, #ff5b11 100%);
-  background-image: linear-gradient(#ff9723 0px, #ff5b11 100%);
-  border-top: 4px solid #ff5b11;
-  border-bottom: 4px solid #ff9723;
+  background-image: -webkit-gradient(linear, left top, right top, from(#232490), color-stop(51%, #5b5cfb), to(#232490));
+  background-image: -o-linear-gradient(left, #232490 0%, #5b5cfb 51%, #232490 100%);
+  background-image: linear-gradient(90deg, #232490 0%, #5b5cfb 51%, #232490 100%);
+  border-top: 4px solid #5b5cfb;
+  border-bottom: 4px solid #5b5cfb;
   margin: auto;
   width: 100%;
   padding: 10px 0;
@@ -3755,30 +3757,32 @@ ul#portfolio-grid.two-column > li {
 }
 
 .price__list-text {
-  color: #e7d6c0;
-  font-size: 17px;
+  color: #000;
+  font-size: 15px;
   padding-bottom: 20px;
 }
 
 .price__list-text .fa {
   margin-right: 10px;
-  font-size: 14px;
+  font-size: 12px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
 
 .price__list:hover .price__list-title {
-  background-image: -o-linear-gradient(#ff9723 0px, #ff5b11 100%);
-  background-image: linear-gradient(#ff9723 0px, #ff5b11 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#232490), color-stop(51%, #5b5cfb), to(#232490));
+  background-image: -o-linear-gradient(left, #232490 0%, #5b5cfb 51%, #232490 100%);
+  background-image: linear-gradient(90deg, #232490 0%, #5b5cfb 51%, #232490 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .price__list:hover .price__list-text .fa {
-  background-image: -o-linear-gradient(#ff9723 0px, #ff5b11 100%);
-  background-image: linear-gradient(#ff9723 0px, #ff5b11 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#232490), color-stop(51%, #5b5cfb), to(#232490));
+  background-image: -o-linear-gradient(left, #232490 0%, #5b5cfb 51%, #232490 100%);
+  background-image: linear-gradient(90deg, #232490 0%, #5b5cfb 51%, #232490 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -3790,17 +3794,17 @@ ul#portfolio-grid.two-column > li {
 
 .price__list-btn {
   background: none;
-  border: 2px solid #ff5b11;
+  border: 2px solid #232490;
   padding: 10px 30px;
-  color: #ff9723;
+  color: #5b5cfb;
   font-size: 18px;
   text-transform: uppercase;
   outline: none;
   margin-top: 30px;
   margin-bottom: 20px;
-  background: -webkit-gradient(linear, right top, left top, color-stop(50%, transparent), color-stop(50%, #FF9900));
-  background: -o-linear-gradient(right, transparent 50%, #FF9900 50%);
-  background: linear-gradient(to left, transparent 50%, #FF9900 50%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, transparent), color-stop(50%, #232490));
+  background: -o-linear-gradient(right, transparent 50%, #232490 50%);
+  background: linear-gradient(to left, transparent 50%, #232490 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   -webkit-transition: all 350ms ease;
@@ -3810,7 +3814,7 @@ ul#portfolio-grid.two-column > li {
 }
 
 .price__list-btn:hover {
-  color: #ff5b11;
+  color: #fff;
   background-position: left bottom;
 }
 
@@ -3836,11 +3840,10 @@ ul#portfolio-grid.two-column > li {
   border: 1px solid #232490;
   border-radius: 50%;
   position: absolute;
-  bottom: -70px;
-  left: 46%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 3;
   cursor: pointer;
   -webkit-transition: 0.7s;
@@ -3856,24 +3859,29 @@ ul#portfolio-grid.two-column > li {
   background-image: linear-gradient(90deg, #232490 0%, #5b5cfb 51%, #232490 100%);
 }
 
+.swiper-wrapper__prev {
+  left: -5%;
+}
+
 .swiper-wrapper__next {
-  left: 54%;
+  right: -10%;
 }
 
 .detailed {
   display: none;
   position: fixed;
   z-index: 1000;
+  border: 1px solid #232490;
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 100%;
+  width: 75%;
   height: 100vh;
   text-align: center;
-  padding: 50px 50px 50px;
-  background-color: #081438;
+  padding: 50px 30px 50px;
+  background-color: #fff;
   overflow: hidden;
 }
 
@@ -3883,13 +3891,13 @@ ul#portfolio-grid.two-column > li {
 
 .detailed__btn {
   position: absolute;
-  top: 5%;
+  top: 3%;
   right: 5%;
   font-size: 50px;
   background: transparent;
   border: none;
   outline: none;
-  color: #e7d6c0;
+  color: #000;
   cursor: pointer;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -3903,15 +3911,17 @@ ul#portfolio-grid.two-column > li {
 .detailed__underline {
   width: 80%;
   height: 2px;
-  background: #e7d6c0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#232490), color-stop(51%, #5b5cfb), to(#232490));
+  background-image: -o-linear-gradient(left, #232490 0%, #5b5cfb 51%, #232490 100%);
+  background-image: linear-gradient(90deg, #232490 0%, #5b5cfb 51%, #232490 100%);
   margin: auto;
   margin-bottom: -15px;
 }
 
 .detailed__title {
-  color: #ff5b11;
+  color: #232490;
   text-transform: uppercase;
-  background-color: #081438;
+  background-color: #fff;
   width: 360px;
   margin: auto;
   z-index: 2;
@@ -3925,15 +3935,16 @@ ul#portfolio-grid.two-column > li {
 }
 
 .detailed__content-title {
-  background-image: -o-linear-gradient(#ff9723 0px, #ff5b11 100%);
-  background-image: linear-gradient(#ff9723 0px, #ff5b11 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#232490), color-stop(51%, #5b5cfb), to(#232490));
+  background-image: -o-linear-gradient(left, #232490 0%, #5b5cfb 51%, #232490 100%);
+  background-image: linear-gradient(90deg, #232490 0%, #5b5cfb 51%, #232490 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .detailed__content-info {
-  color: #e7d6c0;
+  color: #000;
   width: 100%;
   max-width: 700px;
   margin: 5px 0 20px;
@@ -3981,10 +3992,8 @@ ul#portfolio-grid.two-column > li {
 
 .site-work-line_2 {
   left: 54%;
-  -webkit-animation: siteLineGold 5s linear 4.5s infinite;
-  animation: siteLineGold 5s linear 4.5s infinite;
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
+  -webkit-animation: siteLineGold 5s linear 5s infinite;
+  animation: siteLineGold 5s linear 5s infinite;
   position: absolute;
 }
 
@@ -4037,8 +4046,6 @@ ul#portfolio-grid.two-column > li {
 
 @-webkit-keyframes siteLineGold {
   0% {
-    -webkit-transition-delay: 1s;
-    transition-delay: 1s;
     -webkit-transform: translate(0);
     transform: translate(0);
   }
@@ -4051,9 +4058,6 @@ ul#portfolio-grid.two-column > li {
 
 @keyframes siteLineGold {
   0% {
-    -webkit-transition-delay: 1s;
-    -o-transition-delay: 1s;
-    transition-delay: 1s;
     -webkit-transform: translate(0);
     transform: translate(0);
   }
@@ -5512,6 +5516,18 @@ ul#portfolio-grid.two-column > li {
     max-width: 900px;
   }
 
+  .swiper-wrapper__prev {
+    left: 0;
+  }
+
+  .swiper-wrapper__next {
+    right: -5.5%;
+  }
+
+  .detailed {
+    width: 100%;
+  }
+
   .bubbles-block {
     padding-bottom: 150px;
   }
@@ -5845,17 +5861,12 @@ ul#portfolio-grid.two-column > li {
     margin-bottom: 0px !important;
   }
 
-  .swiper-wrapper__prev,
-  .swiper-wrapper__next {
-    left: 44%;
+  .swiper-wrapper__prev {
+    left: -2.5%;
   }
 
   .swiper-wrapper__next {
-    left: 56%;
-  }
-
-  .detailed__btn {
-    top: 3%;
+    right: -10%;
   }
 
   .detailed__content {
@@ -6520,15 +6531,24 @@ ul#portfolio-grid.two-column > li {
   }
 
   .price__list {
-    width: 300px;
+    width: 260px;
+  }
+
+  .price__list-title {
+    font-size: 16px;
   }
 
   .price__list-text {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .price__list-text .fa {
-    font-size: 12px;
+    font-size: 11px;
+  }
+
+  .price__list-btn {
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
 
   .swiper-wrapper__prev,
