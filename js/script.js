@@ -252,13 +252,29 @@ $(document).ready(function () {
       '<button class="swiper-wrapper__prev"><i class="fa fa-angle-left"></i></button>',
     nextArrow:
       '<button class="swiper-wrapper__next"><i class="fa fa-angle-right"></i></button>',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 
   let modalDetail = $("[data-detail]");
   let modalClose = $("[data-close]");
 
-  modalDetail.on("click", function (e) {
-    e.preventDefault();
+  modalDetail.on("click", function () {
+    /*  e.preventDefault(); */
 
     let $this = $(this);
     let modalId = $this.data("detail");
@@ -267,13 +283,24 @@ $(document).ready(function () {
     $("html").addClass("no-scroll");
   });
 
-  modalClose.on("click", function (e) {
-    e.preventDefault();
+  modalClose.on("click", function () {
+    /*   e.preventDefault(); */
 
     let $this = $(this);
     let modalParent = $this.parents(".detailed");
 
     modalParent.removeClass("show");
     $("html").removeClass("no-scroll");
+  });
+
+  // слайдер для секций
+
+  $(".allourservices-wrapper").slick({
+    arrows: false,
+    dots: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true, //pauseOnHover  speed
+    speed: 250,
   });
 });
