@@ -4139,11 +4139,8 @@ ul#portfolio-grid.two-column > li {
   width: 300px;
   padding: 15px 20px 15px 104px;
   /*   background: rgba(0,0,0,.2); */
-  background-image: -webkit-gradient(linear, left top, right top, from(#232490), color-stop(51%, #5b5cfb), to(#232490));
-  background-image: -o-linear-gradient(left, #232490 0%, #5b5cfb 51%, #232490 100%);
-  background-image: linear-gradient(90deg, #232490 0%, #5b5cfb 51%, #232490 100%);
-  /*  background: linear-gradient(to bottom, #232490 0%, #5b5cfb 100%); */
-  /*    background-image: linear-gradient(90deg,#ff9723 0,#ff5b11 51%,#ff9723 100%); */
+  background-color: #fff;
+  border: 1px solid #232490;
   margin: 0 7px 13px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4160,8 +4157,13 @@ ul#portfolio-grid.two-column > li {
   transition: 1s;
 }
 
-.works__item:hover {
-  background-position: right;
+.works__item:hover .works__head {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #232490), color-stop(51%, #5b5cfb), to(#232490));
+  background-image: -o-linear-gradient(left, #232490 0, #5b5cfb 51%, #232490 100%);
+  background-image: linear-gradient(90deg, #232490 0, #5b5cfb 51%, #232490 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .works__icon {
@@ -4190,13 +4192,13 @@ ul#portfolio-grid.two-column > li {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 5px;
-  color: #fff;
+  color: #000;
 }
 
 .works__descr {
   font-size: 12px;
   line-height: 14px;
-  color: #fff;
+  color: #000;
 }
 
 .works .ic-main:before {
