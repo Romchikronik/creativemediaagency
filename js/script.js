@@ -300,7 +300,44 @@ $(document).ready(function () {
     dots: false,
     slidesToShow: 5,
     slidesToScroll: 1,
-    autoplay: true, //pauseOnHover  speed
+    autoplay: true, //pauseOnHover
     speed: 250,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
+
+  // строка на странице сайтов
+  /*   var gold = document.getElementsByClassName("site-work-line-word_gold");
+  var animation = document.getElementById("site-work-line");
+  if (animation.css("animation", siteLine) == 50) {
+    gold.innerHTML = "прибыль";
+  } */
 });

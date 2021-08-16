@@ -4028,16 +4028,16 @@ ul#portfolio-grid.two-column > li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  left: -15%;
-  -webkit-animation: siteLine 3s linear infinite;
-  animation: siteLine 3s linear infinite;
+  left: -30%;
+  -webkit-animation: siteLine 4s linear infinite;
+  animation: siteLine 4s linear infinite;
   position: absolute;
 }
 
 .site-work-line_2 {
   left: -62%;
-  -webkit-animation: siteLineGold 3s linear 3s infinite;
-  animation: siteLineGold 3s linear 3s infinite;
+  -webkit-animation: siteLineGold 4s linear 2s infinite;
+  animation: siteLineGold 4s linear 2s infinite;
   position: absolute;
 }
 
@@ -4060,59 +4060,55 @@ ul#portfolio-grid.two-column > li {
   margin: 0 10px;
 }
 
-.site-work-line-word__last {
-  margin-right: 400px;
-}
-
 .site-work-line-word_gold {
   color: #FF9900;
 }
 
 @-webkit-keyframes siteLine {
-  0% {
-    -webkit-transform: translate(0);
-    transform: translate(0);
+  30% {
+    margin-left: 0px;
+    opacity: 1;
   }
 
   100% {
-    -webkit-transform: translate(10%);
-    transform: translate(10%);
+    margin-left: 450px;
+    opacity: 0;
   }
 }
 
 @keyframes siteLine {
-  0% {
-    -webkit-transform: translate(0);
-    transform: translate(0);
+  30% {
+    margin-left: 0px;
+    opacity: 1;
   }
 
   100% {
-    -webkit-transform: translate(10%);
-    transform: translate(10%);
+    margin-left: 450px;
+    opacity: 0;
   }
 }
 
 @-webkit-keyframes siteLineGold {
-  0% {
-    -webkit-transform: translate(0);
-    transform: translate(0);
+  30% {
+    margin-left: 0px;
+    opacity: 1;
   }
 
   100% {
-    -webkit-transform: translate(10%);
-    transform: translate(10%);
+    margin-left: 450px;
+    opacity: 0;
   }
 }
 
 @keyframes siteLineGold {
-  0% {
-    -webkit-transform: translate(0);
-    transform: translate(0);
+  30% {
+    margin-left: 0px;
+    opacity: 1;
   }
 
   100% {
-    -webkit-transform: translate(10%);
-    transform: translate(10%);
+    margin-left: 450px;
+    opacity: 0;
   }
 }
 
@@ -5782,6 +5778,18 @@ ul#portfolio-grid.two-column > li {
     width: 100%;
   }
 
+  .site-work-line {
+    left: -120%;
+  }
+
+  .site-work-line_2 {
+    left: -100%;
+  }
+
+  .works {
+    padding-bottom: 0;
+  }
+
   .bubbles-block {
     padding-bottom: 150px;
   }
@@ -6136,6 +6144,14 @@ ul#portfolio-grid.two-column > li {
     font-size: 9px;
   }
 
+  .site-work-line {
+    display: none;
+  }
+
+  .site-work-line_2 {
+    display: none;
+  }
+
   .bubbles-block {
     padding-bottom: 50px;
   }
@@ -6220,6 +6236,14 @@ ul#portfolio-grid.two-column > li {
 
   .bubbles-wrp {
     overflow: hidden;
+  }
+
+  .success .success__col {
+    margin-bottom: 120px;
+  }
+
+  .success .success__col_2 {
+    margin-bottom: 20px;
   }
 
   .success__title {
@@ -6420,6 +6444,24 @@ ul#portfolio-grid.two-column > li {
     width: 9%;
   }
 
+  .payment-content__site-text {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .payment-content__site-text .jobs {
+    margin-bottom: 25px;
+    margin-right: 0;
+  }
+
+  .payment-content__site-text .citate {
+    margin-bottom: 20px;
+  }
+
+  .payment-content__site-text .citate__main {
+    width: 180px;
+  }
+
   .payment-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -6467,6 +6509,10 @@ ul#portfolio-grid.two-column > li {
   .detailed__content-info .fa {
     font-size: 7px;
     margin: 0 10px;
+  }
+
+  .site-work__title {
+    max-width: 500px;
   }
 
   .bubble-wrp .bubbles-info {
@@ -6837,6 +6883,27 @@ ul#portfolio-grid.two-column > li {
     line-height: 14px;
   }
 
+  .site-work__title {
+    max-width: 300px;
+  }
+
+  .site-work__img {
+    width: 90%;
+  }
+
+  .works {
+    padding-bottom: 30px;
+    padding-top: 0;
+  }
+
+  .works__head {
+    font-size: 12px;
+  }
+
+  .works__descr {
+    font-size: 10px;
+  }
+
   .bubbles-block__title {
     font-size: 20px;
     line-height: 22px;
@@ -6881,6 +6948,10 @@ ul#portfolio-grid.two-column > li {
 
   .success {
     padding-top: 0;
+  }
+
+  .success .success__col_3 {
+    margin-bottom: 130px;
   }
 
   .success__title {
