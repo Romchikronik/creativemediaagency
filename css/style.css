@@ -2498,9 +2498,9 @@ section {
   align-items: center;
 }
 
-.payment-content__site-text .jobs {
-  width: 120px;
-  height: 120px;
+.payment-content__site-text .bill {
+  /*   width: 106px;
+                height: 120px; */
   margin-right: 15px;
 }
 
@@ -6449,7 +6449,7 @@ ul#portfolio-grid.two-column > li {
     flex-wrap: wrap;
   }
 
-  .payment-content__site-text .jobs {
+  .payment-content__site-text .bill {
     margin-bottom: 25px;
     margin-right: 0;
   }
